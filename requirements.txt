@@ -3,4 +3,4 @@ scikit-learn
 pandas
 numpy
 joblib
-spacy==3.8.11
+nltk
