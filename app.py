@@ -3,8 +3,7 @@ import joblib
 import spacy
 
 # Load trained model
-model = joblib.load(r'D:\NLP\Emotions\emotion_model.pkl')
-
+model = joblib.load("emotion_model.pkl")
 # Load spacy model
 nlp = spacy.load("en_core_web_sm")
 
@@ -40,4 +39,5 @@ if st.button("Predict Emotion"):
         st.success(f"Predicted Emotion: {emotion_map[prediction]}")
 
     else:
+
         st.warning("Please enter some text.")
